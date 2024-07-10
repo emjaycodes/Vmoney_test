@@ -1,16 +1,47 @@
-# blog_app_test
+# Flutter Blog App
 
-A new Flutter project.
+This is a Flutter application that allows users to view, create, update, and bookmark blog posts. The app uses GraphQL for data fetching and mutation, and Provider for state management.
+
+## Features
+
+- View a list of blog posts with random images
+- Search blog posts by title
+- Bookmark favorite blog posts
+- Create new blog posts
+- Update existing blog posts
+- View detailed information about a blog post
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart
+- A GraphQL server endpoint
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/flutter-blog-app.git
+   cd flutter-blog-app
+   
+Install dependencies:
+
+
+```dart
+flutter pub get
+```
+Set up your GraphQL endpoint:
+
+Replace the client initialization in your BlogProvider with your GraphQL server's endpoint.
+
+```dart
+final HttpLink httpLink = HttpLink('https://your-graphql-endpoint.com/graphql');
+```
+Run the app:
+
+```dart
+flutter run
+```
