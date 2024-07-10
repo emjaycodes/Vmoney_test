@@ -24,7 +24,7 @@ This is a Flutter application that allows users to view, create, update, and boo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/flutter-blog-app.git
+   git clone https://github.com/emjaycodes/flutter-blog-app.git
    cd flutter-blog-app
    
 Install dependencies:
