@@ -3,7 +3,6 @@ import 'package:blog_app_test/provider/blog_provider.dart';
 import 'package:blog_app_test/screens/blog_details.dart';
 import 'package:blog_app_test/screens/blog_edit_screen.dart';
 import 'package:blog_app_test/widgets/blog_card.dart';
-import 'package:blog_app_test/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -13,24 +12,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('Home'),
-      // ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // Expanded(
-              //   child: TabBarView(
-              //     children: [
-
-              //       const BookmarkedScreen(),
-                    
-              //     ],
-              //   ),
-              // ),
-            
               Consumer<BlogProvider>(builder: (context, data, child) {
                 final blogs =
                     Provider.of<BlogProvider>(context, listen: false).blogList;
@@ -86,20 +72,7 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 );
-              })
-              // FutureBuilder<void>(
-              //   future: Provider.of<BlogProvider>(context, listen: false)
-              //       .fetchBlogs(),
-              //   builder: (context, snapshot) {
-              //     if (snapshot.connectionState == ConnectionState.waiting) {
-              //       return const Center(child: CircularProgressIndicator());
-              //     }
-              //     if (snapshot.hasError) {
-              //       return Center(child: Text('Error: ${snapshot.error}'));
-              //     }
-
-              //   },
-              // ),
+              }),
             ],
           ),
         ),

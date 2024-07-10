@@ -1,10 +1,7 @@
-import 'package:blog_app_test/grahpql/graphql_client.dart';
 import 'package:blog_app_test/provider/blog_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'screens/blog_list_screen.dart';
 
 void main() {
